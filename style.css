@@ -2,6 +2,29 @@
 		background-color: #5985AD ;
 		font-family: 'Open Sans Condensed', sans-serif;
 	}
+
+    @media only screen and (min-width : 1224px) {
+      font-family: 'Open Sans Condensed', sans-serif;
+            }
+
+
+     .intro {
+        background-color: white;
+        width: 1300px;
+        height: 500px;
+        font-family: 'Sacramento', cursive;
+        font-size: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.2;
+      }
+
+      .intro_button {
+        background-color: white;
+        font-family: 'Open Sans Condensed', sans-serif;
+
+      }
+    
 <!-- Creates the Hobbie Images --> 
  .flute_rounded, .cat, .pool{
   border-radius: 50%;
@@ -88,8 +111,9 @@ span.text-content {
 }
 
 <!-- Hobbies End-->
+
 .courses {
-	background-color: white;
+	color: white;
 }
 
 
