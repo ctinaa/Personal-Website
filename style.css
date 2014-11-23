@@ -1,0 +1,95 @@
+	body {
+		background-color: #5985AD ;
+		font-family: 'Open Sans Condensed', sans-serif;
+	}
+<!-- Creates the Hobbie Images --> 
+ .flute_rounded, .cat, .pool{
+  border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	diplay: block;
+	margin-left: auto;
+	margin-right: auto;
+    	}	
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+ 
+ul.img-list li {
+  border-radius: 50%;
+  display: inline-block;
+  height: 200px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 200px;
+ 
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+    border-radius: 50%
+}
+ 
+span.text-content span {
+  display: table-cell;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+  border-radius: 50%;
+}
+ 
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+   border-radius: 50%;
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  border-radius: 50%;
+}
+.hobbies {
+  background-color: #F0F8FF;
+}
+
+<!-- Hobbies End-->
+.courses {
+	background-color: white;
+}
+
+
