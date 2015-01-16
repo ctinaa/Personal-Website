@@ -12,13 +12,82 @@
   background-attachment: fixed;
   }
 */
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+/* Smartphones (landscape) ----------- */
+
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen
+and (max-width : 500px) {
+/* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
 h1{
 font-color: black;
 font-size: 80px;
 position: absolute;
 center: 500px;
 right: 200px;
-top: 400px;
+top: 430px;
 
 margin: auto;
 font-family: 'Slabo 27px', serif;
@@ -30,7 +99,7 @@ font-color: black;
 font-size: 20px;
 position: absolute;
 center: 500px;
-top: 490px;
+top: 510px;
 right: 200px;
 margin: auto;
 font-family: 'Slabo 27px', serif;
@@ -98,15 +167,41 @@ body, html, main {
 }
 .cd-fixed-bg.cd-bg-2 {
   background-image: url("nl.jpg");
-   
+    height: 40%;
+    min-height: 30%;   
 
 }
 
 .cd-scrolling-bg cd-color-2 {
   position: center;
+  background-color: white;
+  min-height: 30%;
+  opacity: 0.5;
+  position:relative;
+  
+  background: rgba(0,0,0,0.5);
+
+}
+<!-- background: rgba(255,255,255,.5) -->
+
+.cd-fixed-bg cd-bg-2 {
+ min-height: 40%;
 }
 
+.cd-scrolling-bg cd-color-3 {
 
+  position: center;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+   min-height: 50%;
+  opacity: 0.5;
+  position:relative;
+  background: rgba(255,255,255,.5);
+
+ 
+
+}
 
 .cd-fixed-bg.cd-bg-3 {
   background-image: url("wall.jpg");
@@ -144,8 +239,8 @@ font-family: 'Slabo 27px', serif;
 
   position:absolute;
   transition: .5s ease;
-  left: 450px;
-  top: 450px;
+  left: 520px;
+  top: 470px;
 
 }
 
@@ -167,8 +262,8 @@ font-family: 'Slabo 27px', serif;
 
   position:absolute;
   transition: .5s ease;
-  left: 650px;
-  top: 450px;
+  left: 710px;
+  top: 470px;
 
 }
 
@@ -177,53 +272,32 @@ font-family: 'Slabo 27px', serif;
   text-decoration: none;
 }
 
-.heart {
-    position: absolute;
-    width: 100px;
-    height: 90px;
-    left: 1400px;
-    top: 400px;
-    opacity: 0.5;
+.contactme{
+font-color: black;
+font-size: 20px;
+opacity: .9;
+position: relative;
+width: 500px;
+height: 300px;
+right: -283px;
+top: 81px;
+margin: auto;
+font-family: 'Slabo 27px', serif;
 }
 
 
-.heart:before,
-.heart:after {
-    position: absolute;
-    content: "";
-    left: 50px;
-    top: 0;
-    width: 50px;
-    height: 80px;
-    background: red;
-    -moz-border-radius: 50px 50px 0 0;
-    border-radius: 50px 50px 0 0;
-    -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
-       -moz-transform-origin: 0 100%;
-        -ms-transform-origin: 0 100%;
-         -o-transform-origin: 0 100%;
-            transform-origin: 0 100%;
+.links {
+  position: relative;
+  position: absolute;
+center: 500px;
+top: 515px;
+right: 497px;
+margin: auto;
 }
-.heart:after {
-    left: 0;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: 100% 100%;
-       -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100%;
-         -o-transform-origin: 100% 100%;
-            transform-origin :100% 100%;
-}
-  
-.circle1 {
+
+
+
+.transferingcircle {
  background-color: rgba(255,255,255,.7);
  
  height: 150px;
@@ -233,51 +307,99 @@ font-family: 'Slabo 27px', serif;
  opacity: 0.5;
  position: relative;
 center: 500px;
-right: -200px;
-top: 100px;
+left: 357px;
+top: -225px;
+margin-right: 0px;
 }
 
-.circle2 {
+
+.codecircle {
  background-color: rgba(255,255,255,.7);
  
- height: 300px;
- width: 300px;
+ height: 150px;
+ width: 150px;
+ -moz-border-radius:75px;
+ -webkit-border-radius: 75px;
+ opacity: 0.5;
+ position: relative;
+center: 500px;
+left: 357px;
+top: -225px;
+margin-right: 0px;
+}
+
+.ohlonebox {
+ background-color: rgba(255,255,255,.7);
+ 
+ height: 170px;
+ width: 446px;
  -moz-border-radius:150px;
  -webkit-border-radius: 150px;
  opacity: 0.5;
  position: relative;
 center: 500px;
-right: -400px;
+right: -531px;
 top: -400px;
+margin: 21px;
+margin-right: auto;
+}
 
-margin:auto;
+.code {
+ background-color: rgba(255,255,255,.7);
+ 
+ height: 120px;
+ width: 446px;
+ -moz-border-radius:150px;
+ -webkit-border-radius: 150px;
+ opacity: 0.5;
+ position: relative;
+center: 500px;
+right: -531px;
+top: -70px;
+margin: 21px;
+margin-right: auto;
+}
+
+.codeclasses{
+position: relative;
+height: 200px;
+width: 350px;
+left: 662px;
+top: -305px;
+font-family: 'Slabo 27px', serif;
+opacity: 0.5px;
+font-color: white;
+
 }
 
 .related-classes{
 position: relative;
-
-right: -45px;
-top: 100px;
+right: -90px;
+top: 31px;
 font-family: 'Slabo 27px', serif;
 font-color: white;
 
 }
+
+
 .education {
 position: relative;
-center: 500px;
-right: -100px;
-top: 300px;
+left: 7px;
+top: 309px;
 margin: auto;
- opacity: 0.5;
+opacity: 0.5;
 }
 
+.classof {
+  position: relative;
+  left: -340px;
+  top: -80px;
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
 
+}
 
-
-
-
-
-
+<!-- Skills --> 
 
 <!-- Creates the Hobbie Images --> 
  .flute_rounded, .pool, .code {}
@@ -313,6 +435,8 @@ ul.img-list {
 
 
 }
+
+
  
 ul.img-list li {
   border-radius: 50%;
@@ -378,5 +502,138 @@ span.text-content {
   transition: opacity 500ms;
   border-radius: 50%;
 }
+
+<!-- Projects --> 
+ul.projects {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -moz-border-radius:20px;
+  -webkit-border-radius: 20px;
+  /*background-color: white;*/
+}
+
+ul.projects li {
+  border-radius: 10%;
+  display: inline-block;
+  height: 200px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 350px;
+
+ 
+}
+span.explain {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+    border-radius: 50%
+}
+ 
+span.explain span {
+  display: table-cell;
+  border-radius: 10%;
+  text-align: center;
+  vertical-align: middle;
+}
+span.explain {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+  border-radius: 10%;
+}
+ 
+ul.projects li:hover span.explain {
+  opacity: 1;
+   border-radius: 10%;
+   font-family: 'Slabo 27px', serif;
+}
+span.explain {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 350px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  border-radius: 10%;
+}
+
+
+
+
+.skills2 {
+  background-color:transparent;
+  -moz-border-radius:18px;
+  -webkit-border-radius:18px;
+  border-radius:18px;
+  border:1px solid #e8e3e8;
+  display:inline-block;
+  cursor:pointer;
+  color:#0a0a0a;
+  font-family:arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+}
+.skills:hover {
+  background-color:transparent;
+}
+.skill:active {
+  position:relative;
+  top:1px;
+}
+
+
+.photoshop {
+ background-color: white;
+ height: 200px;
+ width: 200px;
+ -moz-border-radius:75px;
+ -webkit-border-radius: 106px;
+ opacity: 0.5;
+ position: relative;
+ center: 500px; 
+ left: 357px;
+ top: -66px;
+ margin-right: 0px;
+
+} 
+
+.cplusplus {
+ background-color: black;
+ height: 300px;
+ width: 300px;
+ -moz-border-radius:75px;
+ -webkit-border-radius: 158px;
+ 
+ position: relative;
+ center: 500px; 
+ left: 400px;
+ top: 0px;
+ margin-right: 0px;
+
+} 
 
 
